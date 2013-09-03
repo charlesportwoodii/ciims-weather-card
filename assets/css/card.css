@@ -9,13 +9,31 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	color: #999;
+	color: #fff;
+	background-color: #81daf6;
+}
+
+#FcAlexkTPM-footer {
+	background-color: #81daf6;
+	color: #fff;
+	border-top: none;
+}
+
+#FcAlexkTPM-footer .footer-text,
+#FcAlexkTPM-footer .icon-padding {
+	color: #fff;
+	border: none;
+	font-size: 11px;
+}
+
+#FcAlexkTPM-footer .icon-padding {
+	font-size: 13px;
 }
 
 #FcAlexkTPM .card-header {
 	display: block;
 	height: 35px;
-	border-bottom: 1px solid #eee;
+	border-bottom: none
 }
 
 #FcAlexkTPM .location {
@@ -26,7 +44,7 @@
 	height: 100%;
 	width: 90px;
 	max-width: 90px;
-	font-size: 10px;
+	font-size: 11px;
 	float: left;
 	padding-top: 1px;
 }
@@ -65,5 +83,5 @@
 }
 
 #FcAlexkTPM .temperature .icon {
-	color: #999;
+	color: #fff;
 }
