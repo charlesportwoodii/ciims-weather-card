@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.$asset; ?>/css/card.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.$asset; ?>/climacons/webfont/climacons-font.css" />
 
-<div id="FcAlexkTPM" data-attr-id="<?php echo $model->id; ?>">
+<div id="<?php echo $model->scriptName; ?>" data-attr-id="<?php echo $model->id; ?>">
 	<div class="card-header">
 		<span class="location"></span>
 		<div class="temperature">
