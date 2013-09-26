@@ -43,11 +43,11 @@ var FcAlexkTPM = {
 	 * 
 	 * @param  string id  The unique ID of the card we want this card to manipulate
 	 */
-	load : function(id) {
+	load : function(id, name) {
 		// Set some variables
 		this.id = id;
-		this.uuid = "FcAlexkTPM-" + this.id;
-		this.target = "#FcAlexkTPM[data-attr-id='" + this.id + "']";
+		this.uuid = name + "-" + this.id;
+		this.target = "#" + name + "[data-attr-id='" + this.id + "']";
 		this.apiKey = $("." + this.id + "-modal").find("input#Weather_apikey").val();
 		this.metric = $("." + this.id + "-modal").find("input#Weather_metric").is(":checked");
 
