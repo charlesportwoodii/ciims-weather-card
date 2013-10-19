@@ -9,9 +9,10 @@
 		"name" : "Charles R. Portwood II",
 		"email" : "charlesportwoodii@ethreal.net"
 	},
+	"repository" : "https://www.github.com/charlesportwoodii/ciims-weather-card",
 	"category" : "General",
 	"license" : "MIT",
-	"version" : "0.9",
+	"version" : "1.0",
 	"sizes" : [ "normal" ],
 	"activeSize" : "normal"
 }
