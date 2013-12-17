@@ -3,7 +3,6 @@
 
 <div id="<?php echo $model->scriptName; ?>" data-attr-id="<?php echo $model->id; ?>">
 	<div class="card-header">
-		<span class="location"></span>
 		<div class="temperature">
 			<span class="degrees"></span>
 			<span class="icon climacon farenheit"></span>

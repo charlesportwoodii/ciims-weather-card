@@ -32,9 +32,6 @@ var FcAlexkTPM = {
 	// Whether or not to use farenheit or centigrade
 	metric : false,
 
-	// Cache data loaded from GeoIP
-	geoIp : null,
-
 	// Card position data
 	position : null,
 
@@ -94,15 +91,7 @@ var FcAlexkTPM = {
 	 */
 	setLocationString : function(self, id, target) {
 		var response = null;
-
-		self.getGeoIp(function(data) {
-			if (data.country.iso_code == "US")
-				response = data.city.names.en + ", " + data.subdivisions[0].iso_code;
-			else
-				response = data.citynames.en + "," + data.subdivisions[0].names.en;
-
-			$(target).find(".location").text(response);
-		});
+        return;
 	},
 
 	/**
