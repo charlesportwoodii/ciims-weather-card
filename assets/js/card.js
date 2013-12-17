@@ -73,39 +73,6 @@ var FcAlexkTPM = {
 	 * @return boolean   If we can use GeoIP. This is used by canUseCard outlined above.
 	 */
 	getGeoIp : function(callback) {
-		var key = this.uuid + "-geoip",
-			response = JSON.parse(localStorage.getItem(key)),
-			self = this;
-
-		if (response == undefined || response == null || response == '')
-		{
-			// This request MUST be syncronous, otherwise if we hit an error the card breaks.
-			$.ajax({
-				url :'https://j.maxmind.com/js/apis/geoip2/v2.0/geoip2.js', 
-				dataType : 'script',
-				success : function(script, textStatus) {
-
-					if (textStatus != "success")
-						return false;
-
-					geoip2.city(function(data) {
-						self.geoIp = response = data;
-						localStorage.setItem(key, JSON.stringify(data));
-						
-						if (callback != undefined)
-							callback(self.geoIp);
-					});					
-				}
-			});			
-
-			return true;
-		}
-		
-		self.geoIp = response;
-
-		if (callback != undefined)
-			callback(self.geoIp);
-
 		return true;
 	},
 
