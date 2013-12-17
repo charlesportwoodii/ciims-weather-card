@@ -14,25 +14,12 @@ ciims-weather-card is a dashboard card for CiiMS 1.8+ that provides basic weathe
 
 ### Configuring
 
-This card utilizes two main datasources that are external of CiiMS. Both must be initialized BEFORE the card will function
+Before you can use this card you need to get a API key from Forecast.io
 
-1) MaxMind GeoIP2 Javascript API Access
-
-- Navigate to [MaxMinds Signup Page](http://www.maxmind.com/en/javascript) and click on "Sign up for Free Service"
-- Enter your account details and register for an account
-- Navigate to your [Javascript Domains](https://www.maxmind.com/en/javascript_domains) page.
-- Add your FQDN (sub)/domain name to the list of authorized domains
-
-2) Forecast.io API Key
+1) Forecast.io API Key
 
 - Navigate to [developer.forecast.io](https://developer.forecast.io/), and register a developer account to retrieve an API key.
 - Within CiiMS, navigate to the Weather card you want to configure, click the "gear" icon, and add your API Key
-
-3) Once __both__ apis are registered, the card will function.
-### Disclaimers
-
-This website [card] uses [GeoIP2 JavaScript from MaxMind](http://www.maxmind.com/en/javascript)
-
 
 ### License
 The MIT License (MIT)
